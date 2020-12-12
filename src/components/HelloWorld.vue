@@ -6,16 +6,21 @@
 
 
   </div>
-
-
+  
+     
     <dialog :open="dialogIsOpen">
-        <h3>{{msg}}</h3>
+   <h3>{{msg}}</h3>
         <button @click="dialogIsOpen=false">Close</button>
     </dialog>
 </div>
 </template>
 
 <script>
+if(!localStorage.getItem("valueInput")){
+
+
+localStorage.setItem("valueInput",1)
+}
 export default {
   name: 'HelloWorld',
   props: {
@@ -23,7 +28,9 @@ export default {
   },
   data: function(){
     return{
-      dialogIsOpen:false
+      dialogIsOpen:false,
+      value:localStorage.getItem("valueInput"),
+      rawHtml:"hello there boy"
     }
   }
 }
