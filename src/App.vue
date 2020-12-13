@@ -2,19 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <componenttwo value="helo two"/>
+    <Componenttwo value="helo two"/>
+    <ConditionalRendering />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Componenttwo from './components/Componenttwo.vue'
+import ConditionalRendering from './components/ConditionalRendering.vue'
 //import Componenttwo from './components/Componenttwo.vue'
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Componenttwo
+    Componenttwo,
+    ConditionalRendering
    
   }
 }
