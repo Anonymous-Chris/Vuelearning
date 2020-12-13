@@ -16,7 +16,7 @@ both the values are changed. -->
 
     <div>
         <ol>
-            <li v-for="todo in todos" v-bind:key="todo">
+            <li v-for="todo in todos" v-bind:key="todo.text">
                 {{todo.text}}
             </li>
         </ol>
@@ -49,7 +49,7 @@ export default {
             })
     },methods:{
         returnReverse(a){
-            console.log(a.split('').reverse().join(''))
+         //   console.log(a.split('').reverse().join(''))
            // console.log(this.seen)
             return (a.split('').reverse().join(''))
     
