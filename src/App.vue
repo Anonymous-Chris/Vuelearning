@@ -4,6 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <Componenttwo value="helo two"/>
     <ConditionalRendering />
+    <ListRendering/>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Componenttwo from './components/Componenttwo.vue'
 import ConditionalRendering from './components/ConditionalRendering.vue'
+import ListRendering from './components/ListRendering.vue'
 //import Componenttwo from './components/Componenttwo.vue'
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Componenttwo,
-    ConditionalRendering
+    ConditionalRendering,
+    ListRendering
    
   }
 }
