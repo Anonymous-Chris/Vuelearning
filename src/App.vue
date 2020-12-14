@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-        <EventHandling/>
+
+    <InputBindings/>
+
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <Componenttwo value="helo two"/>
     <ConditionalRendering />
@@ -15,7 +17,8 @@ import HelloWorld from './components/HelloWorld.vue'
 import Componenttwo from './components/Componenttwo.vue'
 import ConditionalRendering from './components/ConditionalRendering.vue'
 import ListRendering from './components/ListRendering.vue'
-import EventHandling from './components/EventHandling.vue'
+import InputBindings from './components/InputBindings.vue'
+
 //import Componenttwo from './components/Componenttwo.vue'
 export default {
   name: 'App',
@@ -24,7 +27,7 @@ export default {
     Componenttwo,
     ConditionalRendering,
     ListRendering,
-    EventHandling
+    InputBindings
    
   }
 }
