@@ -1,8 +1,9 @@
 <template>
 <div class="menu">
 
-<button v-on:click="increment">Click to increment</button>
+<button v-on:click="increment(),incrementbyTwo()">Click to increment</button>
 <p>{{counter}}</p>
+<p>{{counter2}}</p>
 <p>{{author.books[0]}}</p>
 <p>No of books written by {{author.name}} is: {{noofBooks}}</p>
 <!--the data can be accessed in the form of objects as well in the template -->
@@ -29,6 +30,7 @@ export default {
     data:()=>{
         return({
              counter:0,
+             counter2:0,
              isActive:true,
              hasError:false,
              author:{
@@ -44,6 +46,9 @@ export default {
     },methods:{
         increment(){
             return this.counter+=1;
+        },
+                incrementbyTwo(){
+            return this.counter2+=2;
         }
     },computed:{
         noofBooks(){
