@@ -1,6 +1,15 @@
 <template>
-
 <div>
+
+      <h3>
+    <li v-for="m in msg" v-bind:key="m.name">
+      <p>{{m.name}}   {{m.country}}</p><br/>
+    </li>
+  </h3>
+<div>
+
+
+
   <div  @click="dialogIsOpen=true" class="hello">
     <h1> Create a dialog box </h1>
 
@@ -13,6 +22,7 @@
         <button @click="dialogIsOpen=false">Close</button>
     </dialog>
 </div>
+</div>
 </template>
 
 <script>
@@ -24,7 +34,7 @@ localStorage.setItem("valueInput",1)
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: []
   },
   data: function(){
     return{
