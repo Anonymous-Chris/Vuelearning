@@ -10,12 +10,9 @@
     <ConditionalRendering />
     <ListRendering/>
 -->
-  <ComponentsAd :propVal="value" :propVal2="value1"/>
+ <DynamicAsyncComponents />
 
-  <input v-model="fname"/>
-  <input v-model="lname"/>
-  {{fname}}{{lname}}
-dsd
+
   </div>
 </template>
 
@@ -29,9 +26,10 @@ import InputBindings from './components/InputBindings.vue'
 import Componenttwo from './components/Componenttwo.vue'
 
 import ComponentsBasics from './components/ComponentsBasics.vue'
-*/
 import ComponentsAd from './components/ComponentsAd'
+*/
 
+import DynamicAsyncComponents from './components/DynamicAsyncComponents'
 export default {
   name: 'App',
   components: {
@@ -41,9 +39,11 @@ export default {
     ConditionalRendering,
     ListRendering,
     InputBindings,
-     ComponentsBasics
+     ComponentsBasics,
+     ComponentsAd,
 */
-ComponentsAd
+
+DynamicAsyncComponents
    
   },
 
