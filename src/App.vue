@@ -9,10 +9,11 @@
     <Componenttwo value="helo two"/>
     <ConditionalRendering />
     <ListRendering/>
--->
  <DynamicAsyncComponents />
+-->
 
-
+<Transitions/>
+<Alive/>
   </div>
 </template>
 
@@ -27,9 +28,12 @@ import Componenttwo from './components/Componenttwo.vue'
 
 import ComponentsBasics from './components/ComponentsBasics.vue'
 import ComponentsAd from './components/ComponentsAd'
-*/
+
 
 import DynamicAsyncComponents from './components/DynamicAsyncComponents'
+*/
+import Transitions from './components/Transitions'
+import Alive from './components/Alive'
 export default {
   name: 'App',
   components: {
@@ -41,10 +45,12 @@ export default {
     InputBindings,
      ComponentsBasics,
      ComponentsAd,
-*/
+
 
 DynamicAsyncComponents
-   
+*/
+Transitions,
+Alive  
   },
 
   //PROVIDE HERE IN PARENT COMPONENT. INJECT IN HELLOWORLD.VUE THE CHILD COMPONENT
