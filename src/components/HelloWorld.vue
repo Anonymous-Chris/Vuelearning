@@ -42,6 +42,12 @@ export default {
       value:localStorage.getItem("valueInput"),
       rawHtml:"hello there boy"
     }
+  },
+
+  //INJECT HERE IN CHILD COMPONENT. PROVIDE IS IN PARENT COMPONENT APP.VUE
+  inject:['length'],
+  created(){
+    console.log(this.length)
   }
 }
 </script>

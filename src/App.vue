@@ -15,7 +15,7 @@
   <input v-model="fname"/>
   <input v-model="lname"/>
   {{fname}}{{lname}}
-
+dsd
   </div>
 </template>
 
@@ -46,6 +46,9 @@ export default {
 ComponentsAd
    
   },
+
+  //PROVIDE HERE IN PARENT COMPONENT. INJECT IN HELLOWORLD.VUE THE CHILD COMPONENT
+
 data:()=>{
   return({
     value: ["one","two","three","fout"],
@@ -56,7 +59,12 @@ data:()=>{
     lname:'hellena'
    
   })
-}
+},
+  provide(){
+    return({
+      length: this.fname.length
+    })
+  },
 }
 </script>
 
