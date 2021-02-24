@@ -34,7 +34,7 @@ jobs:
       run: |
         git config --global user.name $user_name
         git config --global user.email $user_email
-        git remote add origin https://${user_name}:${user_password}@github.com/${user_name}/vuelearning.git
+        git remote add origin https://${user_name}:{me%40Hero1}@github.com/${user_name}/vuelearning.git
         npm run deploy
       env:
         user_name: ${{ secrets.USER_NAME }}
