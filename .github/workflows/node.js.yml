@@ -11,6 +11,10 @@ deploy:
  skip_cleanup: true
  github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
  local_dir: dist
- on:
-   branch: master
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 
